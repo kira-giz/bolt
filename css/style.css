@@ -12,6 +12,12 @@ html, body {
   max-width: var(--content-max-width);
   margin: 0 auto;
 }
+.flex-item {
+  flex: 1;
+}
+figure {
+  display: inline-block;
+}
 
 .header {
   position: fixed;
@@ -23,10 +29,10 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
 }
 .header__icon {
   display: inline-block;
-  margin: 15px 0;
   color: var(--background-dark-gray);
   /* 感覚値 */
   font-size: 30px;
@@ -65,9 +71,7 @@ html, body {
   justify-content: space-around;
   padding-top: 50px;
 }
-.flex-item {
-  flex: 1;
-}
+
 .speak__img {
   flex: 1;
   text-align: center;
@@ -84,4 +88,77 @@ html, body {
 .speak__introduction-text {
   font-size: 20px;
   color: #fff;
+  word-break: break-all;
+}
+
+.working {
+  background-color: var(--background-gray);
+  padding: 60px 0 70px 0;
+}
+.working__inner {
+  text-align: center;
+}
+.working__title {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: var(--background-dark-gray);
+}
+.working__contents {
+  margin-bottom: 90px;
+}
+.working__img {
+  /* 画像横の謎の余白を埋めるため付与したが無駄 */
+  overflow: hidden;
+}
+.working__img:nth-child(2),
+.working__img:nth-child(5) {
+  margin: 0 96px;
+}
+.working__img:nth-child(1),
+.working__img:nth-child(2),
+.working__img:nth-child(3) {
+  margin-bottom: 80px;
+}
+.working__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.working__text {
+  margin-right: 90px;
+  color: var(--background-dark-gray);
+  word-break: break-all;
+}
+.working__btn {
+  background-color: var(--theme-color);
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 14px 20px;
+  display: inline-block;
+  /* 改行させない */
+  white-space: nowrap;
+}
+
+.skills {
+  background-color: var(--background-dark-gray);
+  padding: 70px 0 100px 0;
+}
+.skills__inner {
+  text-align: center;
+}
+.skills__title {
+  color: var(--background-gray);
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+.skills__img:not(:nth-child(4)) {
+  margin-right: 180px;
+}
+.skills__caption {
+  font-size: 16px;
+  margin-top: 10px;
+  color: var(--background-gray);
 }
