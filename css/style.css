@@ -1,0 +1,60 @@
+html, body {
+  font-family: Lato, Raleway;
+}
+:root {
+  --default-text-color: #333;
+  --theme-color: #74cfae;
+  --background-gray: #f2f2f2;
+  --background-dark-gray: #4e4e4e;
+  --content-max-width: 1100px;
+}
+.inner {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__icon {
+  display: inline-block;
+  margin: 15px 0;
+  color: var(--background-dark-gray);
+  /* 感覚値 */
+  font-size: 30px;
+}
+.header__button {
+  font-size: 12px;
+  padding: 14px 12px;
+  background-color: var(--theme-color);
+  border: none;
+  color: #fff;
+}
+
+.theme {
+  background-color: var(--background-gray);
+}
+.theme__inner {
+  text-align: center;
+  padding: 250px 0;
+}
+.theme__content {
+}
+.theme__title {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--theme-color);
+}
+.theme__sentence {
+  font-size: 30px;
+  color: #c0c0c0;
+}
