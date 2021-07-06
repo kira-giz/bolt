@@ -46,15 +46,42 @@ html, body {
   text-align: center;
   padding: 250px 0;
 }
-.theme__content {
-}
 .theme__title {
   font-size: 90px;
   font-weight: 700;
   margin-bottom: 20px;
   color: var(--theme-color);
 }
-.theme__sentence {
+.theme__text {
   font-size: 30px;
   color: #c0c0c0;
+}
+
+.speak {
+  background-color: var(--theme-color);
+}
+.speak__inner {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.flex-item {
+  flex: 1;
+}
+.speak__img {
+  flex: 1;
+  text-align: center;
+}
+.speak__introduction {
+  text-align: center;
+  flex: 2;
+}
+.speak__introduction-title {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 35px;
+}
+.speak__introduction-text {
+  font-size: 20px;
+  color: #fff;
 }
