@@ -15,9 +15,17 @@ html, body {
 .flex-item {
   flex: 1;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+li {
+  display: inline-block;
+}
 figure {
   display: inline-block;
 }
+
 
 .header {
   position: fixed;
@@ -47,6 +55,7 @@ figure {
 
 .theme {
   background-color: var(--background-gray);
+  width: 100%;
 }
 .theme__inner {
   text-align: center;
@@ -65,13 +74,13 @@ figure {
 
 .speak {
   background-color: var(--theme-color);
+  width: 100%;
 }
 .speak__inner {
   display: flex;
   justify-content: space-around;
   padding-top: 50px;
 }
-
 .speak__img {
   flex: 1;
   text-align: center;
@@ -82,17 +91,18 @@ figure {
 }
 .speak__introduction-title {
   font-size: 24px;
-  color: #fff;
+  color: var(--background-gray);
   margin-bottom: 35px;
 }
 .speak__introduction-text {
   font-size: 20px;
-  color: #fff;
+  color: var(--background-gray);
   word-break: break-all;
 }
 
 .working {
   background-color: var(--background-gray);
+  width: 100%;
   padding: 60px 0 70px 0;
 }
 .working__inner {
@@ -106,17 +116,17 @@ figure {
 .working__contents {
   margin-bottom: 90px;
 }
-.working__img {
-  /* 画像横の謎の余白を埋めるため付与したが無駄 */
-  overflow: hidden;
+.working__contents-list {
+  font-size: 0;
+  line-height: 0;
 }
-.working__img:nth-child(2),
-.working__img:nth-child(5) {
+.working__contents-list:nth-child(2),
+.working__contents-list:nth-child(5) {
   margin: 0 96px;
 }
-.working__img:nth-child(1),
-.working__img:nth-child(2),
-.working__img:nth-child(3) {
+.working__contents-list:nth-child(1),
+.working__contents-list:nth-child(2),
+.working__contents-list:nth-child(3) {
   margin-bottom: 80px;
 }
 .working__footer {
@@ -134,7 +144,7 @@ figure {
 .working__btn {
   background-color: var(--theme-color);
   border: none;
-  color: #fff;
+  color: var(--background-gray);
   font-size: 12px;
   padding: 14px 20px;
   display: inline-block;
@@ -145,6 +155,7 @@ figure {
 .skills {
   background-color: var(--background-dark-gray);
   padding: 70px 0 100px 0;
+  width: 100%;
 }
 .skills__inner {
   text-align: center;
@@ -154,7 +165,7 @@ figure {
   font-size: 24px;
   margin-bottom: 60px;
 }
-.skills__img:not(:nth-child(4)) {
+.skills__contents-list:not(:nth-child(4)) {
   margin-right: 180px;
 }
 .skills__caption {
