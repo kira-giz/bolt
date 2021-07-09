@@ -173,3 +173,31 @@ figure {
   margin-top: 10px;
   color: var(--background-gray);
 }
+
+.sns {
+  background-color: var(--background-gray);
+  padding: 200px 0;
+}
+.sns__contents {
+  text-align: center;
+}
+.sns__contents-list {
+  width: 185px;
+}
+.sns__icon {
+  color: var(--theme-color);
+  font-size: 48px;
+}
+
+.footer {
+  background-color: var(--theme-color);
+  padding: 20px 0 25px 0;
+}
+.footer__inner {
+  text-align: right;
+  max-width: var(--content-max-width);
+}
+.footer__copy-right {
+  color: var(--background-gray);
+  font-size: 12px;
+}
