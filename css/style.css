@@ -1,6 +1,7 @@
 html, body {
   font-family: Lato, Raleway;
 }
+
 :root {
   --default-text-color: #333;
   --theme-color: #74cfae;
@@ -8,22 +9,26 @@ html, body {
   --background-dark-gray: #4e4e4e;
   --content-max-width: 1100px;
 }
+
 .inner {
   max-width: var(--content-max-width);
   margin: 0 auto;
 }
+
 .flex-item {
   flex: 1;
 }
+
 ul {
   list-style: none;
   padding-left: 0;
 }
+
 figure {
   display: inline-block;
 }
 
-
+/* header */
 .header {
   position: fixed;
   z-index: 100;
@@ -31,18 +36,21 @@ figure {
   width: 100%;
   background-color: #fff;
 }
+
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0px;
+  padding: 15px;
 }
+
 .header__icon {
   display: inline-block;
   color: var(--background-dark-gray);
   /* 感覚値 */
   font-size: 30px;
 }
+
 .header__btn {
   font-size: 12px;
   padding: 14px 12px;
@@ -50,11 +58,14 @@ figure {
   border: none;
   color: #fff;
 }
+
 .header__btn:hover {
   cursor: pointer;
   transition: .3s;
   color: var(--default-text-color);
 }
+
+/* mobile-menu */
 .mobile-menu__btn {
   display: none;
   width: 28px;
@@ -62,6 +73,7 @@ figure {
   border: solid 1px var(--background-dark-gray);
   border-radius: 4px;
 }
+
 .mobile-menu__btn--line {
   display: block;
   width: 24px;
@@ -71,9 +83,11 @@ figure {
   transition: 0.2s;
   margin: 6.25px auto 0;
 }
+
 .mobile-menu__btn--line:nth-child(3) {
   margin: 6.25px auto;
 }
+
 @media screen and (max-width: 767px) {
   .header__inner {
     padding: 15px 15px;
@@ -86,83 +100,101 @@ figure {
   }
 }
 
+/* bolt theme */
 .theme {
   background-color: var(--background-gray);
   width: 100%;
 }
+
 .theme__inner {
   text-align: center;
   padding: 250px 0;
 }
+
 .theme__title {
   font-size: 90px;
   font-weight: 700;
-  margin-bottom: 20px;
   color: var(--theme-color);
 }
+
 .theme__text {
   font-size: 30px;
   color: #c0c0c0;
+  margin-top: 20px;
 }
 
+/* what we can do? */
 .speak {
   background-color: var(--theme-color);
   width: 100%;
 }
+
 .speak__inner {
   display: flex;
   justify-content: space-around;
   padding-top: 50px;
 }
+
 .speak__img {
   flex: 1;
   text-align: center;
 }
+
 .speak__introduction {
   text-align: center;
   flex: 2;
 }
+
 .speak__introduction-title {
   font-size: 24px;
   color: var(--background-gray);
-  margin-bottom: 35px;
 }
+
 .speak__introduction-text {
   font-size: 20px;
   color: var(--background-gray);
   word-break: break-all;
+  margin-top: 35px;
 }
 
+/* our latest work */
 .working {
   background-color: var(--background-gray);
   width: 100%;
   padding: 60px 0 70px 0;
 }
+
 .working__inner {
   text-align: center;
 }
+
 .working__title {
   font-size: 24px;
-  margin-bottom: 40px;
   color: var(--background-dark-gray);
 }
+
 .working__contents {
-  margin-bottom: 90px;
+  margin-top: 40px;
 }
+
+
 .working__contents-list {
   font-size: 0;
   line-height: 0;
   display: inline-block;
 }
+
 .working__contents-list:nth-child(2),
 .working__contents-list:nth-child(5) {
   margin: 0 96px;
 }
-.working__contents-list:nth-child(1),
-.working__contents-list:nth-child(2),
-.working__contents-list:nth-child(3) {
-  margin-bottom: 80px;
+
+.working__contents-list:nth-child(4),
+.working__contents-list:nth-child(5),
+.working__contents-list:nth-child(6) {
+  margin-top: 80px;
 }
+
 .working__contents-link:hover .working__contents-img {
   transition: 0.3s;
   opacity: 1;
@@ -170,18 +202,20 @@ figure {
 .working__contents-img {
   opacity: 0.7;
 }
+
 .working__footer {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 90px auto 0;
 }
+
 .working__text {
-  margin-right: 90px;
   color: var(--background-dark-gray);
   word-break: break-all;
 }
+
 .working__btn {
   background-color: var(--theme-color);
   border: none;
@@ -191,48 +225,62 @@ figure {
   display: inline-block;
   /* 改行させない */
   white-space: nowrap;
+  margin-left: 90px;
 }
+
 .working__btn:hover {
   cursor: pointer;
   transition: 0.3s;
   color: var(--default-text-color);
 }
 
+/* our skills */
 .skills {
   background-color: var(--background-dark-gray);
   padding: 70px 0 100px 0;
   width: 100%;
 }
+
 .skills__inner {
   text-align: center;
 }
+
 .skills__title {
   color: var(--background-gray);
   font-size: 24px;
-  margin-bottom: 60px;
 }
-.skills__contents-list {
+
+.skills__contents {
+  margin-top: 60px;
+}
+
+.skills__contents-li {
   display: inline-block;
 }
-.skills__contents-list:not(:nth-child(4)) {
-  margin-right: 180px;
+
+.skills__contents-li:not(:first-child) {
+  margin-left: 180px;
 }
+
 .skills__caption {
   font-size: 16px;
   margin-top: 10px;
   color: var(--background-gray);
 }
 
+/* sns */
 .sns {
   background-color: var(--background-gray);
   padding: 200px 0;
 }
+
 .sns__contents {
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .sns__contents-list {
   width: 185px;
   height: 100px;
@@ -240,24 +288,29 @@ figure {
   justify-content: center;
   align-items: center;
 }
+
 .sns__contents-list:hover {
   cursor: pointer;
   transition: 0.3s;
   background-color: #fff;
 }
+
 .sns__icon {
   color: var(--theme-color);
   font-size: 48px;
 }
 
+/* footer */
 .footer {
   background-color: var(--theme-color);
 }
+
 .footer__inner {
   text-align: right;
   max-width: var(--content-max-width);
   padding: 20px 0 25px 0;
 }
+
 @media screen and (max-width: 767px) {
   .footer__inner {
     padding: 20px 15px 25px;
