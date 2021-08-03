@@ -1,3 +1,4 @@
+/* 共通 */
 html, body {
   font-family: Lato, Raleway;
 }
@@ -10,6 +11,15 @@ html, body {
   --content-max-width: 1100px;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+figure {
+  display: inline-block;
+}
+
 .inner {
   max-width: var(--content-max-width);
   margin: 0 auto;
@@ -19,13 +29,22 @@ html, body {
   flex: 1;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+.back-gray {
+  background-color: var(--background-gray);
 }
 
-figure {
+.button {
+  font-size: 12px;
+  background-color: var(--theme-color);
+  border: none;
+  color: #fff;
   display: inline-block;
+}
+
+.button:hover {
+  cursor: pointer;
+  transition: .3s;
+  color: var(--default-text-color);
 }
 
 /* header */
@@ -52,17 +71,7 @@ figure {
 }
 
 .header__btn {
-  font-size: 12px;
   padding: 14px 12px;
-  background-color: var(--theme-color);
-  border: none;
-  color: #fff;
-}
-
-.header__btn:hover {
-  cursor: pointer;
-  transition: .3s;
-  color: var(--default-text-color);
 }
 
 /* mobile-menu */
@@ -102,7 +111,6 @@ figure {
 
 /* bolt theme */
 .theme {
-  background-color: var(--background-gray);
   width: 100%;
 }
 
@@ -159,7 +167,6 @@ figure {
 
 /* our latest work */
 .working {
-  background-color: var(--background-gray);
   width: 100%;
   padding: 60px 0 70px 0;
 }
@@ -176,7 +183,6 @@ figure {
 .working__contents {
   margin-top: 40px;
 }
-
 
 .working__contents-list {
   font-size: 0;
@@ -199,6 +205,7 @@ figure {
   transition: 0.3s;
   opacity: 1;
 }
+
 .working__contents-img {
   opacity: 0.7;
 }
@@ -217,12 +224,7 @@ figure {
 }
 
 .working__btn {
-  background-color: var(--theme-color);
-  border: none;
-  color: #fff;
-  font-size: 12px;
   padding: 14px 20px;
-  display: inline-block;
   /* 改行させない */
   white-space: nowrap;
   margin-left: 90px;
@@ -270,7 +272,6 @@ figure {
 
 /* sns */
 .sns {
-  background-color: var(--background-gray);
   padding: 200px 0;
 }
 
