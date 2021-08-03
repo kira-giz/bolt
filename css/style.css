@@ -1,6 +1,7 @@
 /* 共通 */
 html, body {
-  font-family: Lato, Raleway;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 :root {
@@ -184,20 +185,20 @@ figure {
   margin-top: 40px;
 }
 
-.working__contents-list {
+.working__contents-li {
   font-size: 0;
   line-height: 0;
   display: inline-block;
 }
 
-.working__contents-list:nth-child(2),
-.working__contents-list:nth-child(5) {
-  margin: 0 96px;
+.working__contents-li:nth-child(2),
+.working__contents-li:nth-child(5) {
+  margin: 0 95px;
 }
 
-.working__contents-list:nth-child(4),
-.working__contents-list:nth-child(5),
-.working__contents-list:nth-child(6) {
+.working__contents-li:nth-child(4),
+.working__contents-li:nth-child(5),
+.working__contents-li:nth-child(6) {
   margin-top: 80px;
 }
 
@@ -279,10 +280,10 @@ figure {
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
-.sns__contents-list {
+.sns__contents-li {
   width: 185px;
   height: 100px;
   display: flex;
@@ -290,7 +291,7 @@ figure {
   align-items: center;
 }
 
-.sns__contents-list:hover {
+.sns__contents-li:hover {
   cursor: pointer;
   transition: 0.3s;
   background-color: #fff;
