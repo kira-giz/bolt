@@ -56,12 +56,14 @@ figure {
   display: none;
 }
 
+/* pad */
 @media screen and (max-width: 1199px) {
   .inner {
     max-width: 97%;
   }
 }
 
+/* mobile */
 @media screen and (max-width: 767px) {
   .wrap-back {
     display: block;
@@ -139,6 +141,7 @@ figure {
   margin-top: 20px;
 }
 
+/* mobile */
 @media screen and (max-width: 767px) {
   .theme__inner {
     padding: 160px 0 130px;
@@ -160,7 +163,7 @@ figure {
   padding-top: 50px;
 }
 
-/* pad以下 */
+/* pad */
 @media screen and (max-width: 1199px) {
   .speak__inner {
     flex-direction: column;
@@ -263,7 +266,7 @@ figure {
   margin-left: 90px;
 }
 
-/* pad以下 */
+/* pad */
 @media screen and (max-width: 1199px) {
   .working__li {
     display: block;
@@ -323,7 +326,7 @@ figure {
   color: var(--background-gray);
 }
 
-/* pad以下 */
+/* pad */
 @media screen and (max-width: 1199px) {
   .skills__li {
     display: block;
@@ -367,6 +370,7 @@ figure {
   transform: translate(-50%, -50%);
 }
 
+/* mobile */
 @media screen and (max-width: 767px) {
   .sns__contents {
     flex-direction: column;
