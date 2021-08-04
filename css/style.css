@@ -72,6 +72,9 @@ figure {
 
 /* header */
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
   width: 100%;
   background-color: #fff;
 }
@@ -127,7 +130,7 @@ figure {
 /* bolt theme */
 .theme__inner {
   text-align: center;
-  padding: 250px 0;
+  padding: 320px 0 250px;
 }
 
 .theme__title {
