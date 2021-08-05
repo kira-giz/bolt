@@ -186,7 +186,6 @@ figure {
 .working__ul {
   margin-top: 40px;
   font-size: 0;
-  text-align: center;
 }
 
 .working__li {
@@ -351,6 +350,10 @@ figure {
   }
 
   /* OUR LATEST WORK */
+.working__inner {
+  text-align: center;
+}
+
   .working__li {
     display: block;
     margin: 0;
