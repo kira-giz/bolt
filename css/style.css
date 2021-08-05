@@ -171,15 +171,15 @@ figure {
 /* OUR LATEST WORK */
 .working {
   width: 100%;
-  padding: 60px 0 70px;
 }
 
 .working__inner {
-  text-align: center;
+  padding: 60px 0 70px;
 }
 
 .working__title {
   font-size: 24px;
+  text-align: center;
   color: var(--background-dark-gray);
 }
 
@@ -258,7 +258,7 @@ figure {
   font-size: 24px;
 }
 
-.skills__contents {
+.skills__ul {
   margin-top: 60px;
 }
 
