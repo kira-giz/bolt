@@ -136,7 +136,7 @@ figure {
   }
 }
 
-/* bolt theme */
+/* Bolt Theme */
 .theme__inner {
   text-align: center;
   padding: 250px 0 250px;
@@ -164,7 +164,7 @@ figure {
   }
 }
 
-/* what we can do? */
+/* WHAT WE CAN DO? */
 .speak {
   background-color: var(--theme-color);
   width: 100%;
@@ -217,7 +217,7 @@ figure {
   }
 }
 
-/* our latest work */
+/* OUR LATEST WORK */
 .working {
   width: 100%;
   padding: 60px 0 70px;
@@ -316,7 +316,7 @@ figure {
   }
 }
 
-/* our skills */
+/* OUR SKILLS */
 .skills {
   background-color: var(--background-dark-gray);
   padding: 70px 0 100px 0;
