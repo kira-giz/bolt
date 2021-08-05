@@ -12,7 +12,7 @@ html, body {
   --content-max-width: 1100px;
 }
 
-main  {
+main {
   /* header分 */
   padding-top: 70px;
 }
@@ -143,17 +143,18 @@ figure {
   padding-top: 50px;
 }
 
-.speak__thumb {
-  width: 40%;
+.float-left {
   float: left;
   text-align: center;
+}
+
+.speak__thumb {
+  width: 40%;
   font-size: 0;
 }
 
 .speak__introduction {
   width: 60%;
-  float: left;
-  text-align: center;
 }
 
 .speak__introduction-title {
@@ -335,15 +336,13 @@ figure {
     padding: 50px 0 25px;
   }
 
-  .speak__introduction {
-    margin-top: 20px;
-    width: 100%;
+  .float-left {
     float: none;
+    width: 100%;
   }
 
-  .speak__thumb {
-    width: 100%;
-    float: none;
+  .speak__introduction {
+    margin-top: 20px;
   }
 
   /* OUR LATEST WORK */
@@ -423,7 +422,7 @@ figure {
   .sns__li {
     width: 100%;
   }
-  
+
   .sns__link {
     width: 100%;
   }
