@@ -10,8 +10,11 @@ html, body {
   --background-gray: #f2f2f2;
   --background-dark-gray: #4e4e4e;
   --content-max-width: 1100px;
-  --pad-max-width: 1199px;
-  --mobile-max-width: 767px;
+}
+
+main  {
+  /* header分 */
+  padding-top: 70px;
 }
 
 ul {
@@ -25,6 +28,12 @@ a {
 
 figure {
   display: inline-block;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .inner {
@@ -130,7 +139,7 @@ figure {
 /* bolt theme */
 .theme__inner {
   text-align: center;
-  padding: 320px 0 250px;
+  padding: 250px 0 250px;
 }
 
 .theme__title {
@@ -162,31 +171,19 @@ figure {
 }
 
 .speak__inner {
-  display: flex;
-  justify-content: space-around;
   padding-top: 50px;
 }
 
-/* pad */
-@media screen and (max-width: 1199px) {
-  .speak__inner {
-    flex-direction: column;
-    justify-content: center;
-    padding: 50px 0 25px;
-  }
-  .speak__introduction {
-    margin-top: 20px;
-  }
-}
-
 .speak__thumb {
-  flex: 1;
+  width: 40%;
+  float: left;
   text-align: center;
   font-size: 0;
 }
 
 .speak__introduction {
-  flex: 2;
+  width: 60%;
+  float: left;
   text-align: center;
 }
 
@@ -198,8 +195,26 @@ figure {
 .speak__introduction-text {
   font-size: 20px;
   color: var(--background-gray);
-  word-break: break-word;
+  overflow-wrap:break-word;
   margin-top: 35px;
+}
+
+/* pad */
+@media screen and (max-width: 1199px) {
+  .speak__inner {
+    /* flex-direction: column;
+    justify-content: center; */
+    padding: 50px 0 25px;
+  }
+  .speak__introduction {
+    margin-top: 20px;
+    width: 100%;
+    float: none;
+  }
+  .speak__thumb {
+    width: 100%;
+    float: none;
+  }
 }
 
 /* our latest work */
@@ -217,7 +232,7 @@ figure {
   color: var(--background-dark-gray);
 }
 
-.working__contents {
+.working__ul {
   margin-top: 40px;
   font-size: 0;
 }
@@ -241,6 +256,12 @@ figure {
   margin-top: 0;
 }
 
+.working__link {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+
 .working__thumb {
   opacity: 0.7;
   transition: 0.3s;
@@ -260,7 +281,7 @@ figure {
 
 .working__text {
   color: var(--background-dark-gray);
-  word-break: break-all;
+  overflow-wrap:break-word;
 }
 
 .working__btn {
