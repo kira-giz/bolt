@@ -352,12 +352,8 @@ figure {
     margin: 0;
   }
 
-  .working__li:nth-child(3n) {
-    margin-bottom: 80px;
-  }
-
-  .working__li:last-child {
-    margin-bottom: 0;
+  .working__li:nth-child(3n + 4) {
+    margin-top: 80px;
   }
 
   .working__footer {
