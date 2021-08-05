@@ -244,7 +244,7 @@ figure {
 /* OUR SKILLS */
 .skills {
   background-color: var(--background-dark-gray);
-  padding: 70px 0 100px 0;
+  padding: 70px 0 100px;
   width: 100%;
 }
 
