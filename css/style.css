@@ -186,6 +186,7 @@ figure {
 .working__ul {
   margin-top: 40px;
   font-size: 0;
+  text-align: center;
 }
 
 .working__li {
