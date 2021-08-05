@@ -97,9 +97,6 @@ figure {
   padding: 10px;
   border: solid 1px #ddd;
   border-radius: 4px;
-}
-
-.mobile-menu__btn:hover {
   cursor: pointer;
 }
 
@@ -369,7 +366,7 @@ figure {
   }
 
   .working__btn {
-    margin: 40px 0 0 0;
+    margin: 40px 0 0;
   }
 
   /* OUR SKILLS */
@@ -419,10 +416,7 @@ figure {
     padding: 50px 15px;
   }
 
-  .sns__li {
-    width: 100%;
-  }
-
+  .sns__li,
   .sns__link {
     width: 100%;
   }
