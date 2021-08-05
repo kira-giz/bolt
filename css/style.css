@@ -58,10 +58,10 @@ figure {
   color: #fff;
   display: inline-block;
   transition: .3s;
+  cursor: pointer;
 }
 
 .button:hover {
-  cursor: pointer;
   color: var(--default-text-color);
 }
 
@@ -162,7 +162,7 @@ figure {
 .speak__introduction-text {
   font-size: 20px;
   color: var(--background-gray);
-  overflow-wrap:break-word;
+  overflow-wrap: break-word;
   margin-top: 35px;
 }
 
@@ -291,10 +291,10 @@ figure {
   width: 185px;
   height: 100px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .sns__link:hover {
-  cursor: pointer;
   background-color: #fff;
 }
 
@@ -413,7 +413,8 @@ figure {
   }
 
   .sns__inner {
-    padding: 50px 15px;
+    /* Giztechに左右の15pxは無視しろとの記述 */
+    padding: 50px 0;
   }
 
   .sns__li,
