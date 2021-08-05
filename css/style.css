@@ -99,6 +99,10 @@ figure {
   border-radius: 4px;
 }
 
+.mobile-menu__btn:hover {
+  cursor: pointer;
+}
+
 .mobile-menu__btn-line {
   display: block;
   width: 26px;
