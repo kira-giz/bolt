@@ -36,6 +36,11 @@ figure {
   clear: both;
 }
 
+/* 文字の折り返し */
+.wrap-back {
+  display: none;
+}
+
 .inner {
   max-width: var(--content-max-width);
   margin: 0 auto;
@@ -58,11 +63,6 @@ figure {
 .button:hover {
   cursor: pointer;
   color: var(--default-text-color);
-}
-
-/* 文字の折り返し */
-.wrap-back {
-  display: none;
 }
 
 /* pad */
@@ -118,11 +118,11 @@ figure {
   width: 26px;
   background-color: #ddd;
   height: 2px;
-  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
-.mobile-menu__btn-line:last-child {
-  margin-bottom: 0;
+.mobile-menu__btn-line:first-child {
+  margin-top: 0;
 }
 
 /* mobile */
