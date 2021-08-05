@@ -65,20 +65,6 @@ figure {
   color: var(--default-text-color);
 }
 
-/* pad */
-@media screen and (max-width: 1199px) {
-  .inner {
-    max-width: 97%;
-  }
-}
-
-/* mobile */
-@media screen and (max-width: 767px) {
-  .wrap-back {
-    display: block;
-  }
-}
-
 /* header */
 .header {
   position: fixed;
@@ -125,17 +111,6 @@ figure {
   margin-top: 0;
 }
 
-/* mobile */
-@media screen and (max-width: 767px) {
-  .header__btn {
-    display: none;
-  }
-
-  .mobile-menu__btn {
-    display: inline-block;
-  }
-}
-
 /* Bolt Theme */
 .theme__inner {
   text-align: center;
@@ -152,16 +127,6 @@ figure {
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
-}
-
-/* mobile */
-@media screen and (max-width: 767px) {
-  .theme__inner {
-    padding: 160px 0 130px;
-  }
-  .theme__title {
-    font-size: 80px;
-  }
 }
 
 /* WHAT WE CAN DO? */
@@ -197,24 +162,6 @@ figure {
   color: var(--background-gray);
   overflow-wrap:break-word;
   margin-top: 35px;
-}
-
-/* pad */
-@media screen and (max-width: 1199px) {
-  .speak__inner {
-    /* flex-direction: column;
-    justify-content: center; */
-    padding: 50px 0 25px;
-  }
-  .speak__introduction {
-    margin-top: 20px;
-    width: 100%;
-    float: none;
-  }
-  .speak__thumb {
-    width: 100%;
-    float: none;
-  }
 }
 
 /* OUR LATEST WORK */
@@ -291,31 +238,6 @@ figure {
   margin-left: 90px;
 }
 
-/* pad */
-@media screen and (max-width: 1199px) {
-  .working__li {
-    display: block;
-    margin: 0;
-  }
-
-  .working__li:nth-child(3n) {
-    margin-bottom: 80px;
-  }
-
-  .working__li:last-child {
-    margin-bottom: 0;
-  }
-
-  .working__footer {
-    flex-direction: column;
-    margin-top: 80px;
-  }
-
-  .working__btn {
-    margin: 40px 0 0 0;
-  }
-}
-
 /* OUR SKILLS */
 .skills {
   background-color: var(--background-dark-gray);
@@ -351,17 +273,6 @@ figure {
   color: var(--background-gray);
 }
 
-/* pad */
-@media screen and (max-width: 1199px) {
-  .skills__li {
-    display: block;
-    margin: 88px 0 0;
-  }
-  .skills__li:first-child {
-    margin-top: 0;
-  }
-}
-
 /* sns */
 .sns__inner {
   padding: 200px 0;
@@ -395,23 +306,6 @@ figure {
   transform: translate(-50%, -50%);
 }
 
-/* mobile */
-@media screen and (max-width: 767px) {
-  .sns__contents {
-    flex-direction: column;
-    align-items: center;
-  }
-  .sns__inner {
-    padding: 50px 15px;
-  }
-  .sns__li {
-    width: 100%;
-  }
-  .sns__link {
-    width: 100%;
-  }
-}
-
 /* footer */
 .footer {
   background-color: var(--theme-color);
@@ -425,4 +319,102 @@ figure {
 .footer__copy-right {
   color: var(--background-gray);
   font-size: 12px;
+}
+
+/* pad */
+@media screen and (max-width: 1199px) {
+  .inner {
+    max-width: 97%;
+  }
+
+  /* WHAT WE CAN DO? */
+  .speak__inner {
+    /* flex-direction: column;
+    justify-content: center; */
+    padding: 50px 0 25px;
+  }
+
+  .speak__introduction {
+    margin-top: 20px;
+    width: 100%;
+    float: none;
+  }
+
+  .speak__thumb {
+    width: 100%;
+    float: none;
+  }
+
+  /* OUR LATEST WORK */
+  .working__li {
+    display: block;
+    margin: 0;
+  }
+
+  .working__li:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+
+  .working__li:last-child {
+    margin-bottom: 0;
+  }
+
+  .working__footer {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .working__btn {
+    margin: 40px 0 0 0;
+  }
+
+  /* OUR SKILLS */
+  .skills__li {
+    display: block;
+    margin: 88px 0 0;
+  }
+  .skills__li:first-child {
+    margin-top: 0;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  /* 文字折り返し */
+  .wrap-back {
+    display: block;
+  }
+
+  /* header */
+  .header__btn {
+    display: none;
+  }
+
+  /* モバイルメニュー */
+  .mobile-menu__btn {
+    display: inline-block;
+  }
+
+  /* Bolt Theme */
+  .theme__inner {
+    padding: 160px 0 130px;
+  }
+  .theme__title {
+    font-size: 80px;
+  }
+
+  /* sns */
+  .sns__contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sns__inner {
+    padding: 50px 15px;
+  }
+  .sns__li {
+    width: 100%;
+  }
+  .sns__link {
+    width: 100%;
+  }
 }
