@@ -118,7 +118,7 @@ figure {
 /* Bolt Theme */
 .theme__inner {
   text-align: center;
-  padding: 250px 0 250px;
+  padding: 250px 0;
 }
 
 .theme__title {
@@ -201,9 +201,7 @@ figure {
 }
 
 /* 1〜3番目 */
-.working__li:first-child,
-.working__li:nth-child(2),
-.working__li:nth-child(3) {
+.working__li:nth-child(-n+3) {
   margin-top: 0;
 }
 
@@ -231,6 +229,7 @@ figure {
 }
 
 .working__text {
+  text-align: center;
   color: var(--background-dark-gray);
   overflow-wrap:break-word;
 }
